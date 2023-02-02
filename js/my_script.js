@@ -1,0 +1,32 @@
+$(function(){
+    $('#light_button').click(function(){
+        $('.bg-dark')
+            .removeClass('bg-dark')
+            .addClass('bg-light')
+        $('.text-light')
+            .removeClass('text-light')
+            .addClass('text-dark')
+        $('.border-light')
+            .removeClass('border-light')
+            .addClass('border-dark')
+        $('.img-light-theme').show()
+        $('.img-dark-theme').hide()
+        $('#light_button').hide()
+        $('#dark_button').show()
+    });
+    $('#dark_button').click(function(){
+        $('.bg-light')
+            .removeClass('bg-light')
+            .addClass('bg-dark')
+        $('.text-dark')
+            .removeClass('text-dark')
+            .addClass('text-light')
+        $('.border-dark')
+            .removeClass('border-dark')
+            .addClass('border-light')
+        $('.img-light-theme').hide()
+        $('.img-dark-theme').show()
+        $('#light_button').show()
+        $('#dark_button').hide()
+    });
+});

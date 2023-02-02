@@ -1,0 +1,406 @@
+﻿<!-- arquivo html de conteúdo do site -->
+
+<!-- informa ao navegador que está sendo utilizado html5 -->
+<!DOCTYPE html>
+
+
+
+<!-- delimita todo o documento html -->
+<html>
+
+
+
+	<!-- possui todo o conteúdo não visível do site -->
+	<head>
+
+		<!-- CONFIGURAÇÕES - INÍCIO -->
+
+			<!-- define o tipo de codificação de caracteres -->
+			<meta charset="UTF-8">		
+
+			<!-- define o idioma do documento -->
+			<meta http-equiv="content-language" content="pt-br"/>
+
+			<!-- define que o tipo padrão de linguagem para estilização do documento é css -->
+			<meta http-equiv="content-style-type" content="text/css"/>
+
+			<!-- define que o tipo padrão da linguagem de script do documento é javascript -->
+			<meta http-equiv="content-script-type" content="text/javascript"/>
+
+			<!-- define a compatibilidade entre browsers -->
+			<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+
+			<!-- define o autor da página -->
+			<meta name="author" content="PETEE"/>
+
+		<!-- CONFIGURAÇÕES - FIM -->
+
+
+
+		<!-- COMPARTILHAMENTO - INÍCIO -->
+
+			<!-- define o idioma -->
+			<meta property="og:locale" content="pt_BR">
+
+			<!-- define o link do site -->	
+			<meta property="og:url" content="http://www.cpdee.cora.ufmg.br/">
+
+			<!-- define o título -->	
+			<meta property="og:title" content="Competição de Robôs Autônomos UFMG.">
+			<meta property="og:site_name" content="Competição de Robôs Autônomos UFMG.">
+
+			<!-- define uma breve descrição do conteúdo -->
+			<meta property="og:description" content="Desafie-se!!! 2ª Competição de Robôs Autônomos - CoRA - UFMG.">
+
+			<!-- define o local, o nome e o formato da imagem -->
+			<meta property="og:image" content="../../img/share/cora.png">
+			<meta property="og:image:type" content="image/png"/>
+
+			<!-- define a largura da imagem -->	
+			<meta property="og:image:width" content="200"/>
+
+			<!-- define a altura da imagem -->	
+			<meta property="og:image:height" content="200"/>
+
+		<!-- COMPARTILHAMENTO - FIM -->
+
+
+
+		<!-- LINKS - INÍCIO -->
+
+			<!-- define o arquivo de estilização da página em css -->
+			<link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+			<!-- define o ícone que aparecerá na aba do navegador -->
+			<link rel="shortcut icon" href="../../img/icon/icon.png"/>
+
+			<!-- define o link do google para as fontes que serão utilizadas na página -->		
+			<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300' rel='stylesheet' type='text/css'/> <!-- 'Roboto Condensed' - Texto -->
+			<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:300' rel='stylesheet' type='text/css'/> <!-- 'Roboto Slab' - Títulos -->
+
+		<!-- LINKS - FIM -->
+
+
+
+		<!-- TÍTULO - INÍCIO -->
+
+			<!-- define o título da página -->
+			<title>CoRA 2014</title>
+
+		<!-- TÍTULO - FIM -->
+
+
+
+		<!-- SCRIPTS - INÍCIO -->
+
+			<!-- define o link do google para a biblioteca jQuery -->
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+			<!-- função do slider -->
+			<script> 
+
+				imagens = new Array (
+					"img/slider/cora2014.png"
+				); // imagens do slider
+
+				// links = new Array ("#"); // links das imagens do slider
+
+				var tempo = 5000; // tempo em milissegundos de transição entre as imagens
+
+				var quantidade = 1; // quantidade de imagens no slider
+
+				var slide = 0;
+
+				quantidade = quantidade - 1;
+
+				function slider() { 
+					document.getElementById('id').src = imagens[slide];
+
+					// document.getElementById('aId').href = links[slide];
+
+					if(slide < quantidade) {
+						slide = slide + 1; 
+					} else {
+						slide = 0;
+					}
+
+					setTimeout("slider()", tempo);
+				}
+
+			</script>
+
+		<!-- SCRIPTS - FIM -->
+
+	</head>
+
+
+
+	<!-- onLoad="slider()" é a chamada da função em javascript do slider -->
+	<body onLoad="slider()">
+
+		<!-- TOPO - INÍCIO -->
+
+			<div id="header"> <!-- header - início -->
+
+				<div class="container"> <!-- container - início -->
+
+					<a href="../../index.html"><img class="logo" src="../../img/logo/cora.png" alt="Logo CoRA"></a> <!-- logo cora -->
+
+					<div class="menu"> <!-- menu - início -->
+
+						<ul>
+
+							<li class="itemMenu"><a href="../../index.html">Edições</a>
+								<ul>
+									<li class="layoutMenu"><img src="../../img/layout/menu.png"></li> <!-- seta do submenu -->
+									<li class="subItemMenu"><a href="cora2014.html">1ª Edição</a></li>
+									<li class="subItemMenu"><a href="../../index.html#descricao">2ª Edição</a></li>
+								</ul>
+							</li>
+
+							<li class="itemMenu"><a href="../../index.html#inscricoes">Inscrições</a></li>
+
+							<li class="itemMenu"><a href="../../index.html#competicao">Competição</a>
+								<ul>
+									<li class="layoutMenu"><img src="../../img/layout/menu.png"></li> <!-- seta do submenu -->
+									<li class="subItemMenu"><a href="../../index.html#regulamento">Regulamento</a></li>
+									<li class="subItemMenu"><a href="../../index.html#relatorio">Relatório</a></li>
+									<li class="subItemMenu"><a href="../../index.html#minicurso">Minicurso</a></li>
+									<li class="subItemMenu"><a href="../../index.html#premiacao">Premiação</a></li>
+								</ul>
+							</li>
+
+							<li class="itemMenu"><a href="../../index.html#evento">Evento</a>
+								<ul>
+									<li class="layoutMenu"><img src="../../img/layout/menu.png"></li> <!-- seta do submenu -->
+									<li class="subItemMenu"><a href="../../index.html#cronograma">Cronograma</a></li>
+									<li class="subItemMenu"><a href="../../index.html#local">Local</a></li>
+									<li class="subItemMenu"><a href="../../index.html#informacoes">Informações</a></li>
+								</ul>
+							</li>
+
+							<li class="itemMenu"><a href="../../index.html#parceiros">Parceiros</a></li>
+
+							<li class="itemMenu"><a href="../../index.html#contato">Contato</a></li>
+
+						</ul>
+
+					</div> <!-- menu - fim -->
+
+				</div> <!-- container - fim -->
+
+			</div> <!-- header - fim -->
+
+		<!-- TOPO - FIM -->
+
+
+
+		<!-- SLIDER - INÍCIO -->
+
+			<div id="slider"> <!-- slider - início -->
+
+				<div class="container"> <!-- container - início -->
+
+					<a id="aId"><img id="id"></a>
+
+				</div> <!-- container - fim -->
+
+			</div> <!-- slider - fim -->
+
+		<!-- FIM SLIDER -->
+
+
+
+		<!-- DESCRIÇÃO - INÍCIO -->
+
+			<div id="descricao"> <!-- descrição - início -->
+
+				<div class="container"> <!-- container - início -->
+
+					<h1>1ª Competição de Robôs Autônomos</h1>
+					
+					<p>Foi com muita satisfação que apresentamos para toda a comunidade acadêmica, em Agosto de 2014, a 1ª Competição de Robôs Autônomos - CoRA.</p>
+					<p>Competições de robótica são tradicionais em diversas partes do país e do mundo, lógico que a UFMG não poderia ficar fora dessa!</p>
+					<p>Idealizada pelos integrantes do grupo PET - Engenharia Elétrica - UFMG em parceria com a equipe de robótica AUTOBOTZ - UFMG, 
+					a competição teve como principal objetivo incentivar os alunos da graduação e do ensino médio e técnico a aplicar seus conhecimentos adquiridos em sala de aula na construção de robôs autônomos.</p>
+
+					<div class="conteudoDescricao"> <!-- equipes - início -->
+
+						<img class="iconDescricao" src="../../img/icon/equipes.png" alt="Equipes"> <!-- ícone equipes -->
+						<h1 class="tituloDescricao">Equipes</h1>
+						<p class="paragrafoDescricao">As equipes poderão ter até três membros regularmente matriculados em qualquer instituição de ensino médio ou técnico, ou em um curso de graduação.</p>
+
+					</div> <!-- equipes - fim -->
+
+					<div class="conteudoDescricao"> <!-- pista - início -->
+
+						<img class="iconDescricao" src="../../img/icon/pista.png" alt="Pista"> <!-- ícone pista -->
+						<h1 class="tituloDescricao">Pista</h1>
+						<p class="paragrafoDescricao">A superfície da pista será preta e o percurso será indicado por linhas brancas. Para completar o percurso o robô deverá superar as seguintes dificuldades: curvas de 90°, zigue-zague, cruzamento e faixa de pedestres.</p>
+
+					</div> <!-- pista - fim -->
+
+					<div class="conteudoDescricao"> <!-- protótipos - início -->
+
+						<img class="iconDescricao" src="../../img/icon/prototipos.png" alt="Prototipos"> <!-- ícone protótipos -->
+						<h1 class="tituloDescricao">Protótipos</h1>
+						<p class="paragrafoDescricao">A equipe deverá construir um robô seguidor de linha capaz de superar os desafios e as restrições do regulamento.</p>
+
+					</div> <!-- protótipos - fim -->
+
+					<div class="conteudoDescricao"> <!-- pontuação - início -->
+
+						<img class="iconDescricao" src="../../img/icon/pontuacao.png" alt="Pontuação"> <!-- ícone pontuacao -->
+						<h1 class="tituloDescricao">Pontuação</h1>
+						<p class="paragrafoDescricao">Haverá uma bonificação à equipes que tiverem pelo menos um integrante regularmente matriculado em um instituição de ensino médio, técnico ou cursando, no semestre da competição, o primeiro ou segundo período da graduação.</p>
+
+					</div> <!-- pontuação - fim -->
+
+				</div> <!-- container - fim -->
+
+			</div> <!-- descrição - fim -->
+
+		<!-- DESCRIÇÃO - FIM -->
+
+
+
+		<!-- FOTOS - INÍCIO -->
+		
+			<div id="fotos"> <!-- fotos - início -->
+
+				<div class="container"> <!-- container - início -->
+
+					<!--<h1>Fotos</h1>-->
+
+				</div> <!-- container - fim -->
+
+			<div id="fotos"> <!-- fotos - fim -->
+
+		<!-- FOTOS - FIM -->
+
+
+
+		<!-- VÍDEOS - INÍCIO -->
+		
+			<div id="videos"> <!-- vídeos - início -->
+
+				<div class="container"> <!-- container - início -->
+
+					<!--<h1>Vídeos</h1>
+					
+					<iframe width="560" height="315" src="https://www.youtube.com/watch?v=zrJZhuMY8kg" frameborder="0" allowfullscreen></iframe> -->
+
+				</div> <!-- container - fim -->
+
+			<div id="fotos"> <!-- vídeos - fim -->
+
+		<!-- VÍDEOS - FIM -->
+
+
+
+		<!-- PARCEIROS - INÍCIO -->
+
+			<div id="parceiros"> <!-- parceiros - início -->
+
+				<div class="container"> <!-- container - início -->
+
+					<div class="conteudoParceiros"> <!-- organizadores - início -->
+						<h1 class="tituloParceiros">Organizadores</h1>
+						<a href="http://www.cpdee.ufmg.br/~petee/" target="_blank"><img class="iconParceiros2 iconParceiros" src="../../img/logo/petee.png" alt="PET EE - UFMG"></a>
+						<a href="http://www.cpdee.ufmg.br/~autobotz/" target="_blank"><img class="iconParceiros" src="../../img/logo/autobotz.png" alt="AUTOBOTZ - UFMG"></a>
+					</div> <!-- organizadores - fim -->
+
+					<div class="conteudoParceiros"> <!-- patrocinadores - início -->
+						<h1 class="tituloParceiros">Patrocinadores da 1ª Edição</h1>
+						<a href="http://sempratec.com.br/" target="_blank"><img class="iconParceiros4 iconParceiros" src="img/logo/sempra.png" alt="SEMPRA"></a>
+						<a href="http://www.cemig.com.br/" target="_blank"><img class="iconParceiros" src="img/logo/cemig.png" alt="CEMIG"></a>
+						<a href="http://www.bhtec.org.br/" target="_blank"><img class="iconParceiros" src="img/logo/bhtec.png" alt="BHTEC"></a>
+						<a href="http://www.preabsoluto.com.br/" target="_blank"><img class="iconParceiros" src="img/logo/preAbsoluto.png" alt="Pré Absoluto"></a>
+					</div> <!-- patrocinadores - fim -->
+
+					<div class="conteudoParceiros"> <!-- apoio - início -->
+						<h1 class="tituloParceiros">Apoio</h1>
+						<a href="https://www.eng.ufmg.br" target="_blank"><img class="iconParceiros2 iconParceiros" src="../../img/logo/engenharia.png" alt="Escola de Engenharia - UFMG"></a>
+						<a href="https://www.ufmg.br/" target="_blank"><img class="iconParceiros" src="../../img/logo/ufmg.png" alt="UFMG"></a>
+					</div> <!-- apoio - fim -->
+
+				</div> <!-- container - fim -->
+
+			</div> <!-- parceiros - fim -->
+
+		<!-- PARCEIROS - FIM -->
+
+
+
+		<!-- CONTATO - INÍCIO -->
+
+			<div id="contato"> <!-- contato - início -->
+
+				<div class="container"> <!-- container - início -->
+
+					<h1>Contato</h1>
+
+					<div class="conteudoContato"> <!-- e-mail - início -->
+
+						<img class="iconContato" src="../../img/icon/email.png" alt="E-mail"> <!-- ícone e-mail -->
+						<h1 class="tituloContato">E-mail</h1>
+						<p class="paragrafoContato">cora.ufmg@gmail.com</p>
+
+					</div> <!-- e-mail - fim -->
+
+					<div class="conteudoContato"> <!-- telefone - início -->
+
+						<img class="iconContato" src="../../img/icon/telefone.png" alt="Telefone"> <!-- ícone telefone -->
+						<h1 class="tituloContato">Telefone</h1>
+						<p class="paragrafoContato">(31) 3409-1013</p>
+
+					</div> <!-- telefone - fim -->
+
+					<div class="conteudoContato"> <!-- endereço - início -->
+
+						<img class="iconContato" src="../../img/icon/endereco.png" alt="Endereço"> <!-- ícone endereço -->
+						<h1 class="tituloContato">Endereço</h1>
+						<p class="paragrafoContato">UFMG - Campus Pampulha - Escola de Engenharia - Bloco 3 - Sala 1050</p>
+
+					</div> <!-- endereço - fim -->
+
+				</div> <!-- container - fim -->
+
+			</div> <!-- contato - fim -->
+
+		<!-- CONTATO - FIM -->
+
+
+
+		<!-- RODAPÉ -->
+
+			<div id="rodape"> <!-- rodapé - início -->
+
+				<div class="container"> <!-- container - início -->
+
+					<div class="conteudoRodape"> <!-- informações - início -->
+						<a href="../../index.html"><img class="logoRodape" src="../../img/logo/data.png" alt="Data CoRA"></a> <!-- ícone data -->
+
+						<div class="conteudoSocial"> <!-- social - início -->
+							<a href="https://www.facebook.com/UFMGcora" target="_blank"><img class="iconSocial" src="../../img/icon/facebook.png" alt="Facebook"></a> <!-- ícone facebook -->
+							<a href="http://www.flickr.com/photos/119733974@N04/" target="_blank"><img class="iconSocial" src="../../img/icon/flickr.png" alt="Flickr"></a> <!-- ícone flickr -->
+							<a href="https://www.youtube.com/channel/UCwyWA8kHfFoJq6nnlEeC3xw" target="_blank"><img class="iconSocial" src="../../img/icon/youtube.png" alt="YouTube"></a> <!-- ícone youtube -->
+						</div> <!-- social - fim -->
+
+						<p class="copyright">COPYRIGHT © 2015 PETEE - UFMG</p>
+
+					</div> <!-- informações - fim -->
+
+
+
+				</div> <!-- container - fim -->
+
+			</div> <!-- rodapé - fim -->
+
+		<!-- FIM RODAPÉ -->
+
+	</body>
+
+
+
+</html>

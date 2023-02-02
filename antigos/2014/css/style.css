@@ -1,0 +1,562 @@
+﻿/* arquivo css de estilo do site */
+
+
+
+/* GERAL - INÍCIO */
+
+*,
+body {
+	margin:0px;
+	padding:0px;
+}
+
+.container {
+	width:1200px;
+    margin:0 auto;
+}
+
+a {
+	text-decoration:none;
+}
+
+h1  {
+	font-family:'Roboto Slab', sans-serif;
+    color:#000000;
+	font-size:30px;
+	text-align:center;
+	padding-bottom:20px;
+}
+
+h2 {
+	font-family:'Roboto Slab', sans-serif;
+    font-size:20px;
+	color:#000000;
+	text-align:center;
+	padding-bottom:20px;
+}
+
+p {
+	font-family:'Roboto Condensed', sans-serif;
+	font-size:20px;
+	color:#000000;
+	text-align:justify;
+	text-indent:40px;
+	padding-bottom:10px;
+}
+
+.btn {
+	position:relative;
+	float:left;
+	width:250px;
+	height:50px;
+	margin-top:40px;
+	margin-bottom:40px;
+	margin-right:50px;
+	border-style: solid;
+    border-width: 2px;
+    border-color:#000000;
+
+}
+
+.btn:hover {
+	border-color:#99CC00;
+}
+
+.btn h1 {
+	font-family:'Roboto Slab', sans-serif;
+    font-size:15px;
+	color:#000000;
+	text-align:center;
+	text-transform:uppercase;
+	margin-top:15px;
+}
+
+.btn:hover  h1{
+	color:#99CC00;
+}
+
+.btn1 {
+	margin-left:473px;
+}
+
+.btn2 {
+	margin-left:321px;
+}
+
+.btn3 {
+	margin-left:169px;
+}
+
+/* GERAL - FIM */
+
+
+
+/* TOPO - INÍCIO */
+
+#header {
+	position:fixed;
+	z-index:1000;
+    width:100%;
+	height:100px;
+	background-color:#1A1A1A;
+}
+
+.logo {
+    float:left;
+	width:250px;
+	margin-left:10px;
+}
+
+.menu {
+	float:right;
+	width:720px;
+	height:50px;
+	margin-top:50px;
+	margin-right:10px;
+	font-family:'Roboto Condensed', sans-serif;
+	font-size:20px;
+}
+
+.menu a {
+	color:#FFFFFF;
+}
+
+.menu a:hover {
+	color:#4D4D4D;
+}
+
+.menu li {
+	position:relative;
+	float:left;
+	width:120px;
+	list-style:none;
+	text-align:center;
+}
+
+.itemMenu {
+	height:50px;
+}
+
+.layoutMenu {
+	height:30px;
+	margin-top:20px;
+}
+
+.layoutMenu img {
+	width:20px;
+	height:10px;
+	margin-top:20px;
+}
+
+.subItemMenu {
+	height:30px;
+	background-color:#1A1A1A;
+}
+
+.itemMenu .layoutMenu,
+.itemMenu .subItemMenu {
+	display:none;
+}
+
+.itemMenu:hover .layoutMenu,
+.itemMenu:hover .subItemMenu {
+	display:block;
+}
+
+/* TOPO - FIM */
+
+
+
+/* SLIDER - INÍCIO */
+
+#slider {
+	float:left;
+	width:100%;
+	margin-top:150px;
+
+	/* background-color:green; */
+}
+
+#id {
+	width:1200px;
+	height:444px;
+}
+
+/* SLIDER - FIM */
+
+
+
+/* DESCRIÇÃO - INÍCIO */
+
+#descricao {
+	float:left;
+	width:100%;
+	margin-top:50px;
+
+	/* background-color:blue; */
+}
+
+.conteudoDescricao {
+	float:left;
+	width:300px;
+
+	/* background-color:red; */
+}
+
+.iconDescricao {
+	float:left;
+	width:100px;
+	margin-top:50px;
+	margin-left:100px;
+}
+
+.tituloDescricao {
+	margin-top:170px;
+}
+
+.paragrafoDescricao {
+	text-indent:0px;
+	width:200px;
+	margin-left:50px;
+}
+
+/* DESCRIÇÃO - FIM */
+
+
+
+/* INSCRIÇÕES - INÍCIO */
+
+#inscricoes {
+	float:left;
+	width:100%;
+	margin-top:50px;
+
+	/* background-color:purple; */
+}
+
+/* INSCRIÇÕES - FIM */
+
+
+
+/* COMPETIÇÃO - INÍCIO */
+
+#competicao {
+	float:left;
+	width:100%;
+
+	/* background-color:purple; */
+}
+
+#regulamento {
+	float:left;
+	width:100%;
+	margin-top:50px;
+}
+
+#relatorio {
+	float:left;
+	width:100%;
+	margin-top:50px;
+}
+
+#minicurso {
+	float:left;
+	width:100%;
+	margin-top:50px;
+}
+
+#premiacao {
+	float:left;
+	width:100%;
+	margin-top:50px;
+
+	/* background-color:purple; */
+}
+
+.conteudoPremiacao {
+	float:left;
+	width:400px;
+
+	/* background-color:red; */
+}
+
+.iconPremiacao {
+	float:left;
+	width:300px;
+	margin-top:50px;
+	margin-left:50px;
+	margin-right:50px;
+}
+
+.tituloPremiacao {
+	margin-top:170px;
+}
+
+#classificacao {
+	float:left;
+	width:100%;
+	margin-top:50px;
+}
+
+#img_classificacao {
+	width:1200px;
+	margin-top: 30px;
+}
+
+/* COMPETIÇÃO - FIM */
+
+
+
+/* EVENTO - INÍCIO */
+
+#evento {
+	float:left;
+	width:100%;
+
+	/* background-color:purple; */
+}
+
+#cronograma {
+	float:left;
+	width:100%;
+	margin-top:50px;
+}
+
+#cronograma img {
+	width:1200px;
+	height:444px;
+}
+
+#local {
+	float:left;
+	width:100%;
+	margin-top:50px;
+}
+
+#local iframe {
+	width:1200px;
+	height:444px;
+	border:0px;
+}
+
+#informacoes {
+	float:left;
+	width:100%;
+	margin-top:50px;
+}
+
+.conteudoInformacoes {
+	float:left;
+	width:400px;
+
+	/* background-color:red; */
+}
+
+.iconInformacoes {
+	float:left;
+	width:100px;
+	margin-top:50px;
+	margin-left:150px;
+}
+
+.tituloInformacoes {
+	margin-top:170px;
+}
+
+.paragrafoInformacoes {
+	text-indent:0px;
+	width:300px;
+	margin-left:50px;
+}
+
+/* EVENTO - FIM */
+
+
+
+/* FOTOS - ÍNICIO */
+
+#fotos {
+	float:left;
+	width:100%;
+	margin-top:50px;
+
+	/* background-color:green; */
+}
+
+/* FOTOS - FIM */
+
+
+
+/* VÍDEOS - ÍNICIO */
+
+#videos {
+	float:left;
+	width:100%;
+	margin-top:50px;
+
+	/* background-color:green; */
+}
+
+#videos iframe {
+	margin-left:320px;
+	margin-top:50px;
+}
+
+/* VÍDEOS - FIM */
+
+
+
+/* PARCEIROS - INÍCIO */
+
+#parceiros {
+	float:left;
+	width:100%;
+
+	/* background-color:green; */
+}
+
+
+.conteudoParceiros {
+	float:left;
+	width:100%;
+	display: flex;
+	flex-direction: row;
+  justify-content: center;
+  align-items: center
+	/* background-color:red; */
+}
+
+.iconParceiros {
+	float:left;
+	width:200px;
+	height:200px;
+	margin-bottom:50px;
+	margin-left:50px;
+	margin-right:50px;
+
+}
+.iconParceiros_pet {
+	float:left;
+	width:400px;
+	height:200px;
+	margin-bottom:50px;
+/*	margin-left:380px; */
+}
+
+.iconParceiros2 {
+	margin-left:350px;
+}
+
+.iconParceiros3 {
+	margin-left:200px;
+}
+
+.iconParceiros4 {
+	margin-left:50px;
+}
+
+.iconParceiros_center {
+	margin-left:500px;
+	width:200px;
+	height:200px;
+}
+
+.tituloParceiros {
+	margin-top:50px;
+}
+
+/* PARCEIROS - FIM */
+
+
+
+/* CONTATO - INÍCIO */
+
+#contato {
+	float:left;
+	width:100%;
+	margin-top:50px;
+}
+
+.conteudoContato {
+	float:left;
+	width:400px;
+
+	/* background-color:red; */
+}
+
+.iconContato {
+	float:left;
+	width:100px;
+	margin-top:50px;
+	margin-left:150px;
+}
+
+.tituloContato {
+	margin-top:170px;
+}
+
+.paragrafoContato {
+	text-indent:0px;
+	width:300px;
+	margin-left:50px;
+	text-align:center;
+}
+
+/* CONTATO - FIM */
+
+
+
+/* RODAPÉ - INÍCIO */
+
+#rodape {
+	float:left;
+	width:100%;
+	height:300px;
+	margin-top:100px;
+	background-color:#1A1A1A;
+}
+
+.conteudoRodape {
+	float:left;
+	width:400px;
+	margin-left:400px;
+	margin-right:400px;
+
+	/* background-color:red; */
+}
+
+.copyright {
+	color:#4D4D4D;
+	text-align:center;
+	text-indent:0px;
+	margin-top:260px;
+}
+
+.logoRodape {
+	float:left;
+	width:300px;
+	margin-top:50px;
+	margin-left:50px;
+}
+
+.conteudoSocial {
+	float:left;
+	width:240px;
+	margin-left:60px;
+
+	/* background-color:green; */
+}
+
+.iconSocial {
+	float:left;
+	width:40px;
+	margin-top:50px;
+	margin-left:40px;
+}
+
+.iconSocial:hover {
+	background-color:#99CC00;
+	border-radius:20px;
+}
+
+/* RODAPÉ - FIM */
