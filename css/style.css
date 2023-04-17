@@ -20,16 +20,46 @@ html{
     scroll-behavior: smooth;
 }
 
+body{
+	background-color: 	#001104;
+}
+
+
+
 nav{
     min-height: 80px;
+	background-color: #012709;
+}
+.nav-item{
+	font-family: "Roboto", "sans-serif";
+	font-size: 15px;
+}
+.nav-link{
+	padding-top: 18px;
 }
 
 /* .img-dark-theme{
 
 } */
+
+.img-banner{
+	height: 60vh;
+	object-fit: cover;
+}
+
+.img-thumbnail{
+	height: 50vh;
+	object-fit: cover;
+}
+
 .img-light-theme{
     display: none;
 }
+
+.container-fluid{
+	padding: 0;
+}
+
 
 .my_text-always-light {
     color: #f8f9fa !important;
@@ -62,6 +92,24 @@ a.my_text-always-light:hover, a.my_text-always-light:focus {
 	padding-top: 10px;
 	padding-bottom: 0px;
 	margin-bottom: 0px;
+}
+
+.sub-titulo{
+	color: white;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+.titulo::after{
+	content: "";
+	border-top: 2px solid #28a745;
+	width: 40%;
+	position: absolute;
+	top: 60px;
+	left: 30.5%;
 }
 
 .card-body .fas{
@@ -138,4 +186,12 @@ h2{
 		color: #218838;
 		text-decoration: underline;
 	}
+
+.rodape {
+	background-color: #012709;
+}
+
+.rodape p{
+	color: white;
+}
 
