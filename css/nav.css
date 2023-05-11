@@ -1,0 +1,11 @@
+nav{
+    min-height: 80px;
+	background-color: #012709;
+}
+.nav-item{
+	font-family: "Roboto", "sans-serif";
+	font-size: 15px;
+}
+.nav-link{
+	padding-top: 18px;
+}
