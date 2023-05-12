@@ -112,6 +112,15 @@ a.my_text-always-light:hover, a.my_text-always-light:focus {
 	left: 30.5%;
 }
 
+.img-secao{
+	padding-left: 50px;
+}
+
+.texto-secao{
+	padding: 60px;
+	padding-top: 30px;
+}
+
 .card-body .fas{
 	font-size: 30px;
 	/*color: #8BC34A;*/
