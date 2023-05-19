@@ -98,7 +98,7 @@ a.my_text-always-light:hover, a.my_text-always-light:focus {
 	padding-left: 20px;
 	padding-right: 20px;
 	padding-top: 10px;
-	padding-bottom: 20px;
+	padding-bottom: 0px;
 	margin-bottom: 0px;
 }
 
@@ -120,7 +120,15 @@ a.my_text-always-light:hover, a.my_text-always-light:focus {
 	left: 30.5%;
 	margin:0 auto;
 }
-
+.titulo-f::after{
+	content: "";
+	border-top: 2px solid #5c8a00;
+	width: 40%;
+	position: absolute;
+	top: 60px;
+	left: 30.5%;
+	margin:41px auto;
+}
 .img-secao{
 	
 }
