@@ -21,7 +21,7 @@ html{
 }
 
 body{
-	background-color: 	#001104;
+	background-color: 	rgb(20, 20, 20);
 	font-size: 18px;
 }
 
@@ -29,7 +29,7 @@ body{
 
 nav{
     min-height: 80px;
-	background-color: #012709;
+	background-color: black;
 }
 .nav-item{
 	font-family: "Roboto", "sans-serif";
@@ -85,9 +85,11 @@ nav{
 	background: #012709;
   }
 
-
+.secao{
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+}
 .img-secao{
-	padding-left: 50px;
 }
 
 .texto-secao{
@@ -174,7 +176,7 @@ a.my_text-always-light:hover, a.my_text-always-light:focus {
 
 .titulo::after{
 	content: "";
-	border-top: 2px solid #28a745;
+	border-top: 2px solid #5c8a00;
 	width: 40%;
 	position: absolute;
 	top: 60px;
@@ -225,7 +227,7 @@ h2{
 	}
 	
 	.contato p{
-		color: #28A745;
+		color: #5c8a00;
 		transition: color 0.5s;
 	}
 	
@@ -234,7 +236,7 @@ h2{
 		/*color: #343A40;*/
 		color: #FFFFFF;
 		margin-bottom: 20px;
-		background-color: #28A745;
+		background-color: #5c8a00;
 		/*transition: background-color 0.5s,
 					color 0.5s;*/
 		transition: background-color 0.3s;
@@ -251,7 +253,7 @@ h2{
 	}
 	
 	.meulink{
-		color: #28A745;
+		color: #5c8a00;
 	}
 	
 	.meulink:hover{
@@ -259,8 +261,18 @@ h2{
 		text-decoration: underline;
 	}
 
+.icone{
+	color: #5c8a00;	
+}
+	
+.btn{
+	background-color: #5c8a00;
+	color: white
+}
+	
+
 .rodape {
-	background-color: #012709;
+	background-color: black;
 }
 
 .rodape p{

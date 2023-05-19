@@ -21,14 +21,18 @@ html{
 }
 
 body{
-	background-color: 	#001104;
+	background-color: rgb(20, 20, 20);
+	/*background-color: 	#001104;*/
 }
 
-
+.text-color{
+	color:white;
+}
 
 nav{
     min-height: 80px;
-	background-color: #012709;
+	background-color: black;
+	/*background-color: #012709;*/
 }
 .nav-item{
 	font-family: "Roboto", "sans-serif";
@@ -41,7 +45,10 @@ nav{
 /* .img-dark-theme{
 
 } */
-
+.secao{
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+}
 .img-banner{
 	height: 60vh;
 	object-fit: cover;
@@ -91,7 +98,7 @@ a.my_text-always-light:hover, a.my_text-always-light:focus {
 	padding-left: 20px;
 	padding-right: 20px;
 	padding-top: 10px;
-	padding-bottom: 0px;
+	padding-bottom: 20px;
 	margin-bottom: 0px;
 }
 
@@ -106,15 +113,16 @@ a.my_text-always-light:hover, a.my_text-always-light:focus {
 
 .titulo::after{
 	content: "";
-	border-top: 2px solid #28a745;
+	border-top: 2px solid #5c8a00;
 	width: 40%;
 	position: absolute;
 	top: 60px;
 	left: 30.5%;
+	margin:0 auto;
 }
 
 .img-secao{
-	padding-left: 50px;
+	
 }
 
 .texto-secao{
@@ -163,7 +171,7 @@ h2{
 	}
 	
 	.contato p{
-		color: #28A745;
+		color: #5c8a00;
 		transition: color 0.5s;
 	}
 	
@@ -172,33 +180,42 @@ h2{
 		/*color: #343A40;*/
 		color: #FFFFFF;
 		margin-bottom: 20px;
-		background-color: #28A745;
+		background-color: #5c8a00;
 		/*transition: background-color 0.5s,
 					color 0.5s;*/
 		transition: background-color 0.3s;
 	}
 	
 	.contato:hover .icone-contato{
-		background-color: #218838;
+		background-color: #5c8a00;
 		/*color: #23272B;*/
 	}
 	
 	.contato:hover p{
-		color: #218838;
+		color: #5c8a00;
 		text-decoration: underline;
 	}
 	
 	.meulink{
-		color: #28A745;
+		color: #5c8a00;
 	}
 	
 	.meulink:hover{
-		color: #218838;
+		color: #5c8a00;
 		text-decoration: underline;
 	}
 
+.icone{
+	color: #5c8a00;
+}
+
+.btn{
+	background-color: #5c8a00;
+	color: white;
+}
+
 .rodape {
-	background-color: #012709;
+	background-color: black;
 }
 
 .rodape p{
