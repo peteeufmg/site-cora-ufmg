@@ -50,8 +50,7 @@ nav{
 	margin-right: 2.5%;
 }
 .img-banner{
-	height: 60vh;
-	object-fit: cover;
+	height: 40vh;
 }
 
 .img-thumbnail{
@@ -130,7 +129,7 @@ a.my_text-always-light:hover, a.my_text-always-light:focus {
 	margin:41px auto;
 }
 .img-secao{
-	
+
 }
 
 .texto-secao{
@@ -223,7 +222,13 @@ h2{
 }
 
 .rodape {
-	background-color: black;
+	background-color: rgb(20, 20, 20);
+}
+
+.mini-pista{
+	height: 100px;
+	width: 100%;
+	background-color: white;
 }
 
 .rodape p{

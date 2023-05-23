@@ -90,6 +90,7 @@ nav{
 	margin-right: 2.5%;
 }
 .img-secao{
+	padding-top: 0x;
 }
 
 .texto-secao{
@@ -97,13 +98,12 @@ nav{
 	padding-top: 30px;
 }
 .img-banner{
-	height: 60vh;
-	object-fit: cover;
+	height: 40vh;
 }
 
 .img-thumbnail{
 	height: 50vh;
-	object-fit: cover;
+	
 }
 
 .img-light-theme{
@@ -118,7 +118,7 @@ nav{
 
 .card{
 	background-color: #012709;
-	height: 500px;
+	height: 250px;
 }
 
 .premio-seguidor{
@@ -269,10 +269,16 @@ h2{
 	background-color: #5c8a00;
 	color: white
 }
-	
-
+/*	
+.mini-pista{
+	height: 10px;
+	width: 100%;
+	background-color: white;
+	margin:0;
+	padding: 0;
+}*/
 .rodape {
-	background-color: black;
+	background-color: rgb(20, 20, 20);
 }
 
 .rodape p{
