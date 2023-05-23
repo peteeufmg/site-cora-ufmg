@@ -55,7 +55,6 @@ nav{
 
 .img-thumbnail{
 	height: 50vh;
-	object-fit: cover;
 }
 
 .img-light-theme{
