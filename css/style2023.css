@@ -40,52 +40,13 @@ nav{
 .nav-link{
 	padding-top: 18px;
 }
-
-/* .img-dark-theme{
-
-} */
-/* Pódio */
-.podio {
-	display: flex;
-	align-items: flex-end;
-  }
-  
-  .podium__item {
-	width: 200px;
-  }
-  
-  .podium__rank {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 35px;
-	color: #fff;
-  }
-  
-  .podium__city {
-	text-align: center;
-	padding: 0 .5rem;
-  }
-  
-  .podium__number {
-	width: 27px;
-	height: 75px;
-  }
-  
-  .podium .first {
-	min-height: 300px;
-	background: #012709;
-  }
-
-  .podium .second {
-	min-height: 200px;
-	background: #012709;
-  }
-  
-  .podium .third {
-	min-height: 100px;
-	background: #012709;
-  }
+.dropdown-menu{
+	background-color: #000000;
+}
+.dropdown-item:hover{
+	text-color:gray;
+	background-color: black;
+}
 
 .secao{
 	margin-left: 2.5%;

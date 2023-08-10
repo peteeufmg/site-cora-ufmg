@@ -41,10 +41,14 @@ nav{
 .nav-link{
 	padding-top: 18px;
 }
+.dropdown-menu{
+	background-color: #000000;
+}
+.dropdown-item:hover{
+	text-color:gray;
+	background-color: black;
+}
 
-/* .img-dark-theme{
-
-} */
 .secao{
 	margin-left: 2.5%;
 	margin-right: 2.5%;
