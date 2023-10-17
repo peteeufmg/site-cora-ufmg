@@ -1,29 +1,281 @@
-﻿@media only screen and (max-width: 600px){
-	.banner-desktop{
-	  display: none;
-	 }
-  .banner-mobile{
-	  display: block;
-  }
-}
-
-@media only screen and (min-width: 600px){
-  .banner-desktop{
-	  display: block;
-  }
-	.banner-mobile{
-	display: none;
-	}
-}
-
+﻿/* configuracoes principais */
 html{
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
+	margin-left: 7%;
+	margin-right: 7%;
+	/* margin-bottom: 20px; */
+	transition: 0.5s;
 }
 
 body{
-	background-color: rgb(20, 20, 20);
-	/*background-color: 	#001104;*/
+	background: rgb(20, 20, 20);
+	line-height: 22px;
 }
+
+h1{
+	color: #FFFFFF;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	text-align: center;
+	margin: 0px;
+}
+
+p{
+font-family: 'Roboto', sans-serif;
+font-weight: 400;
+color: #FFFFFF;
+font-size: 15px;
+}
+
+li{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	color: #FFFFFF;
+	font-size: 15px;
+}
+
+h4{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	color: #FFFFFF;
+	font-size: 14px;
+}
+
+nav{
+	transition: 0.5s;
+	margin-left: 0%;
+}
+
+.descricao{
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+.card-title{
+	color: #FFFFFF;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+}
+
+.linha-subtitulo{
+	padding-bottom: 10px;
+	width: 90px;
+}
+
+.titulo{
+	display: table;
+	width: 100%;
+}
+
+.titulo h5{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+a{
+	color: #5c8a00;
+}
+
+a:hover {
+	color: #5c8a00;
+}
+
+::selection{
+	color: white;
+	background-color: #5c8a00;
+}
+.img-thumbnail{
+	height: 50vh;
+	width: 100%;
+	object-fit: cover;
+}
+
+
+/* navbar */
+nav{
+    min-height: 80px;
+	background-color: black;
+	/*background-color: #012709;*/
+}
+.icone-navbar{
+	font-size: 24px;
+}
+.nav-item{
+	font-family: "Roboto", "sans-serif";
+	font-size: 15px;
+}
+.nav-link{
+	padding-top: 18px;
+}
+.dropdown-menu{
+	background-color: #000000;
+}
+.dropdown-item:hover{
+	text-color:gray;
+	background-color: black;
+}
+
+/* linha abaixo do titulo */
+.linha{
+	width: 180px;
+}
+
+/* banner */
+
+.banner-desktop {display: block;}
+.banner-mobile {display: none;}
+	
+@media screen and (max-width: 600px) {
+	.banner-desktop {display: none;}
+	.banner-mobile {display: block;}
+}	
+
+#banner{
+	padding: 0px;
+	margin-left: -9%;
+	margin-right: -9%;
+	width: 117.1%;
+}
+
+#banner img{
+	object-fit: cover;
+}
+
+.img-banner-mobile{
+	height: 500px;
+}
+
+/* Sobre a CoRA */
+
+.sobre-desktop{
+	padding-top: 96px;
+}
+
+.sobre-mobile{
+	padding-top: 46px;
+}
+
+.iframe-container {
+    text-align: center;
+	padding-bottom: 20px;
+}
+
+.iframe-container .iframe-desktop{
+	max-width: 100%;
+	max-height: 315px;
+}
+
+.iframe-container .iframe-mobile{
+	max-width: 100%;
+	max-height: 251px;
+}
+
+
+.sobre-mobile {display: none;}	
+@media screen and (max-width: 1600px) {
+	.sobre-desktop {display: none;}
+	.sobre-mobile {display: block;}
+}	
+
+/* CoRA 2023 */
+.CoRA_2023{
+	padding-top: 30px;
+}
+/* Feira de Exposição de Robôs Autônomos */
+
+.feira{
+	padding-top: 96px;
+}
+
+.img-ajuste-feira{
+	object-position: bottom;
+}
+
+/* Oficina de Robótica */
+
+.oficina{
+	padding-top: 96px;
+}
+@media screen and (max-width: 991px) {
+	.oficina .content{
+		display: flex;
+		flex-direction: column;
+	}
+	.carousel-oficina{
+		order: 2;
+	}
+	.texto-oficina{
+		order: 1;
+	}
+}
+
+/* Apoie a CoRA */
+
+.apoie{
+	padding-top: 96px;
+}
+
+/* Contato */
+
+.contato{
+	padding-top: 96px; margin-left: 7%; margin-right:7%
+}
+/* Parceiros */
+
+/* Rodapé */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .text-color{
 	color:white;
@@ -43,42 +295,8 @@ a.my_text-always-light:hover, a.my_text-always-light:focus {
 
 /*navbar*/
 
-nav{
-    min-height: 80px;
-	background-color: black;
-	/*background-color: #012709;*/
-}
-.nav-item{
-	font-family: "Roboto", "sans-serif";
-	font-size: 15px;
-}
-.nav-link{
-	padding-top: 18px;
-}
-.dropdown-menu{
-	background-color: #000000;
-}
-.dropdown-item:hover{
-	text-color:gray;
-	background-color: black;
-}
 
-/*seções*/
 
-.secao{
-	margin-left: 2.5%;
-	margin-right: 2.5%;
-}
-.texto-secao{
-	padding: 60px;
-	padding-top: 30px;
-}
-
-/*banner*/
-
-.img-banner{
-	height: 50vh;
-}
 
 /*img*/
 
@@ -92,20 +310,7 @@ nav{
 
 /*iframe*/
 
-.iframe-container {
-    position: relative;
-    overflow: hidden;
-    padding-top: 56.25%;
-}
 
-.iframe-fluid {
-    position: absolute;	
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-}
 
 /*títulos*/
 
