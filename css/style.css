@@ -86,7 +86,6 @@ a:hover {
 	background-color: #5c8a00;
 }
 .img-thumbnail{
-	height: 50vh;
 	width: 100%;
 	object-fit: cover;
 }
@@ -119,8 +118,13 @@ nav{
 /* linha abaixo do titulo */
 .linha{
 	width: 180px;
+	height: 2px;
+	background-color: #5c8a00;
+	margin-top: 5px;
 }
-
+@media screen and (max-width: 600px) {
+	.linha {width: 90px;}
+}
 /* banner */
 
 .banner-desktop {display: block;}
@@ -148,12 +152,8 @@ nav{
 
 /* Sobre a CoRA */
 
-.sobre-desktop{
-	padding-top: 96px;
-}
-
-.sobre-mobile{
-	padding-top: 46px;
+.sobre{
+	padding-top:96px;
 }
 
 .iframe-container {
@@ -176,6 +176,7 @@ nav{
 @media screen and (max-width: 1600px) {
 	.sobre-desktop {display: none;}
 	.sobre-mobile {display: block;}
+	.sobre{padding-top: 46px;}
 }	
 
 /* CoRA 2023 */
@@ -219,9 +220,13 @@ nav{
 /* Contato */
 
 .contato{
-	padding-top: 96px; margin-left: 7%; margin-right:7%
+	padding-top: 96px; 
 }
 /* Parceiros */
+
+.parceiros{
+	padding-top: 96px; 
+}
 
 /* Rodapé */
 
@@ -300,9 +305,7 @@ a.my_text-always-light:hover, a.my_text-always-light:focus {
 
 /*img*/
 
-.img-thumbnail{
-	height: 50vh;
-}
+
 
 .img-light-theme{
     display: none;
@@ -334,7 +337,7 @@ a.my_text-always-light:hover, a.my_text-always-light:focus {
 	margin-bottom: 0px;
 }
 
-.titulo::after{
+/*.titulo::after{
 	content: "";
 	border-top: 2px solid #5c8a00;
 	width: 40%;
@@ -351,7 +354,7 @@ a.my_text-always-light:hover, a.my_text-always-light:focus {
 	top: 60px;
 	left: 30.5%;
 	margin:41px auto;
-}
+}*/
 
 h2{
 	font-size: 27px;
