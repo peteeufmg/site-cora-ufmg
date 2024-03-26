@@ -1,0 +1,111 @@
+/* Estilos para telas com largura menor que 450 e 940 pixels */
+@media only screen and (min-width: 450px) and (max-width: 940px){
+
+.main-logo-img{
+    width: 75%;
+}
+.swiper{
+    width: 500px;
+    height: 300px;
+}
+.carrossel-1, .carrossel-2{
+    text-align: center;
+}
+.main-premiacoes-categoria-titulo{
+    margin: 5% 0 5% 0% !important;
+}
+.main-svg-carro{
+    display: none !important;
+}
+.lista-de-itens-outras-ed{
+    position: static !important;
+    margin: 0 0 23px 35px;
+}
+.cabecalho-checkbox-outras-ed-desktop:checked ~ .lista-de-itens-outras-ed{
+    position: static !important;
+    margin: 0 0 23px 35px;
+}
+.main-cronograma{
+    display: none !important; /*temporário*/
+}
+.main-cronograma-dia {
+    display: flex !important;
+    gap: 1% !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    width: 100% !important;
+}
+.footer-colaboradores-realizacao-logo, .footer-colaboradores-apoio-logos, 
+.footer-colaboradores-apoio-logos-logo, .footer-colaboradores-realizacao-logo-svg{
+    width: 100%;
+}
+.footer-informacoes-links-descrição{
+    font-size: 1vw !important;
+}
+.main-mapa-janela {
+    width: 90% !important;
+}
+
+.open-tablet{
+    border: 0.5px solid #434030;
+    justify-content: center;
+    border-radius: 5px;
+    display: flex !important;
+    background-color: #0f1010;
+    flex-direction: column;
+    gap: 8%;
+    height: 45px;
+    width: 66px;
+    position: absolute;
+    right: 5%;
+}
+.cabecalho-links{
+    width: 100vw !important;
+    display: flex !important;
+    flex-direction: column;
+    position: absolute;
+    overflow: hidden !important;
+    top: 18.5% !important;
+    left: 0% !important;
+    width: 103%;
+    height: auto !important;;
+    background-color: #181616;
+    max-height: 0; /* Altura máxima da caixa */
+    transition: max-height 0.5s ease; /* Adiciona uma transição de altura */
+}
+.cabecalho-perfil-img-tablet:checked ~ .cabecalho-links{
+    display: flex !important;
+    flex-direction: column;
+    gap: 6%;
+    position: absolute;
+    top: 18.5% !important;
+    left: 0%;
+    width: 103%;
+    height: auto;
+    background-color: #181616;
+    max-height: 800px !important;
+    transition: max-height 0.5s ease;
+}
+.cabecalho-links-regulamentos{
+    position: relative !important;
+    top: 0% !important;
+    left: 0% !important;
+    margin: 0 0 0 5%;
+    width: 479px;
+    height: 100px;
+    background-color: #3b3838;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease;
+}
+.cabecalho-checkbox:checked ~ .cabecalho-links-regulamentos{
+    display: block;
+    border-radius: 6px;
+    margin: 0 0 0 5%;
+    width: 88%;
+    height: 120px;
+    background-color: #3b3838;
+    max-height: 114px;
+    transition: max-height 0.5s ease;
+}
+}
